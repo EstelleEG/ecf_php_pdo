@@ -59,6 +59,7 @@ La table devra se nommer `comment`.
 - Le `controller` qui traite la création, l'édition et la suppression d'un commentaire doit être
   nommé `CommentController`.
 - L'insertion, la manipulation et l'affichage des données sont fait de manières sécurisées dans toutes les étapes.
+- Une fois l'édition du commentaire validé, la redirection doit se faire sur le commentaire édité.
 - Vous avez utilisé `Bootstrap 5` pour la mise en page.
 
 ----------
@@ -103,7 +104,7 @@ Vous devez faire une pagination pour les articles de la page d'accueil.
 
 ## Rendu
 
-L'ECF devra être validé par un `git commit` avant 17:00 00000 puis déposé sur GitHub et le lien du dépôt envoyé par
-email à chiron.thibaut@sfr.fr.
+L'ECF devra être validé par un `git commit` avant 17:00 00000 puis déposé sur GitHub et le lien URL/HTTP du dépôt envoyé
+par email à chiron.thibaut@sfr.fr.
 
 Votre rendu devra absolument contenir une copie de votre base de données `ecf` ainsi que le travail en l'état.
