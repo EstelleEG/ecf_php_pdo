@@ -7,7 +7,7 @@ CREATE TABLE ecf.user
     id_user    int(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     pseudo     varchar(255)     NOT NULL,
     pwd        varchar(255)     NOT NULL,
-    email      varchar(255)     NOT NULL,
+    email      varchar(255)     NOT NULL UNIQUE,
     created_at datetime         NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
