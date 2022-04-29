@@ -1,6 +1,6 @@
 <?php
 
-use App\Controller\{ArticleController, SigninController, SignoutController, SignupController};
+use App\Controller\{ArticleController, CommentController, SigninController, SignoutController, SignupController};
 
 $router->map('GET', '/', function() {
     $articleController = new ArticleController();
@@ -33,4 +33,26 @@ $router->map('GET|POST', '/signin', function () {
 $router->map('GET|POST', '/signout', function () {
     $signoutController = new SignoutController();
     $signoutController->index();
+});
+
+
+$router->map('GET', '/', function() {
+    $commentController = new CommentController();
+    $commentController->index();
+});
+$router->map('GET', '/comment/show/[i:id]', function(int $id) {
+    $commentController = new CommentController();
+    $commentController->show($id);
+});
+$router->map('GET|POST', '/comment/new/[i:id]', function(int $id) {
+    $commentController = new CommentController();
+    $commentController->new($id);
+});
+$router->map('GET|POST', '/comment/edit/[i:id]', function(int $id) {
+    $commentController = new CommentController();
+    $commentController->edit($id);
+});
+$router->map('GET', '/comment/delete/[i:id]', function(int $id) {
+    $commentController = new CommentController();
+    $commentController->delete($id);
 });

@@ -10,7 +10,7 @@ use App\Model\Article;
 class ArticleDao extends AbstractDao
 {
     /**
-     * Récupères de la base de données tous les articles
+     * Récupère de la base de données tous les articles
      *
      * @return Article[] Tableau d'objet Article
      */

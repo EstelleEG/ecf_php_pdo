@@ -21,6 +21,10 @@ require_once VIEW . DIRECTORY_SEPARATOR . 'header.html.php';
                     <a class="nav-link btn btn-danger text-light"
                        href="<?= sprintf("/article/delete/%d", $article->getIdArticle()) ?>">Delete</a>
                 </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link btn btn-danger text-light"
+                       href="<?= sprintf("/comment/new/%d", $article->getIdArticle()) ?>">Add comment</a>
+                </li>
             </ul>
         <?php
         endif;
